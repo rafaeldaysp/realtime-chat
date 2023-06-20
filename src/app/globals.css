@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  .container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8
+  }
+}
+
+.scrollbar-w-2::-webkit-scrollbar {
+  width: 0.25rem;
+  height: 0.25rem;
+}
+
+.scrollbar-track-purple-lighter::-webkit-scrollbar-track {
+  --bg-opacity:1;
+  background-color: rgba(63,63,70, var(--bg-opacity));
+}
+
+.scrollbar-thumb-purple::-webkit-scrollbar-thumb {
+  --bg-opacity:1;
+  background-color: rgba(53,56,65, var(--bg-opacity));
+}
+
+.scrollbar-thumb-rounded::-webkit-scrollbar-thumb {
+  border-radius: 0.25rem;
+}
